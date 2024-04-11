@@ -1,0 +1,19 @@
+.navMenuBlock {
+  position: absolute;
+  width: 100vw;
+  margin-top: 53px;
+  //   transform: translateX(-100%);
+  height: calc(100vh - 53px);
+  background-color: red;
+  .navMenuList {
+    .navMenuItem {
+      li {
+        color: black;
+        list-style: none;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
