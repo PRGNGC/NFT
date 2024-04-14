@@ -2,7 +2,7 @@
   position: absolute;
   width: 100vw;
   margin-top: 53px;
-  //   transform: translateX(-100%);
+  z-index: 2;
   height: calc(100vh - 53px);
   background-color: red;
   .navMenuList {
