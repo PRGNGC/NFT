@@ -1,1 +1,0 @@
-export {CategoryNfts} from './CategoryNfts'

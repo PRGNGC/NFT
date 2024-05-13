@@ -1,1 +1,0 @@
-export { getAllNft } from "./request";

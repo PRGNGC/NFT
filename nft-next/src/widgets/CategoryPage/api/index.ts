@@ -1,1 +1,0 @@
-export { getCategoryNfts } from "./requests";
