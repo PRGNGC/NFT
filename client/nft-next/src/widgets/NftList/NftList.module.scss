@@ -1,0 +1,29 @@
+@use "@/app/common";
+
+.nftItems {
+  background-color: common.$custom-neutral-2;
+  .nftItemsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 0;
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .disabledLoadMore {
+    display: none;
+  }
+  .activeLoadMore {
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: common.$custom-neutral-8;
+    border: 2px solid rgba(127, 133, 150, 0.3);
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
+}

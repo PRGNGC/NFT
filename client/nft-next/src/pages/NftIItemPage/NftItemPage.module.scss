@@ -1,0 +1,16 @@
+@use "@/app/common" as *;
+
+.nftItemPage {
+  // display: flex;
+  // align-items: center;
+  background-color: $custom-neutral-3;
+  // .nftItemPageContainer {
+  //   // margin: 0 auto;
+  //   // max-width: 1200px;
+  //   // flex-grow: 1;
+  // }
+  .nftItemPageContainer {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+}
