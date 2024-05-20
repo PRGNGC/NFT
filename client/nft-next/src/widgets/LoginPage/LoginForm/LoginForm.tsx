@@ -5,6 +5,7 @@ import { archivo } from "@/app/fonts";
 import { useRouter } from "next/navigation";
 import { login } from "@/app/store/loginSlice/loginSlice";
 import { useDispatch } from "react-redux";
+import { loginApi } from "@/entities/session/api";
 
 export function LoginForm() {
   const [loginInfo, setLogin] = useState<string>("");
@@ -13,17 +14,10 @@ export function LoginForm() {
   const dispatch = useDispatch();
 
   async function handleAddSubmit() {
-    const response = await fetch("http://localhost:4000/api/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ login: loginInfo, password: password }),
-      credentials: "include",
-    });
+    const res = await loginApi(loginInfo, password);
 
-    const data = await response.json();
-    const responseStatus = response.status;
+    const data = await res.json();
+    const responseStatus = res.status;
 
     if (responseStatus === 200) {
       dispatch(login(data.accessToken));

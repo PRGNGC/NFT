@@ -12,5 +12,6 @@ interface NftPageType {
 
 export default async function NftPage({ params }: NftPageType) {
   const nftData = await getNft(params.category, params.nft);
+  console.log(nftData);
   return <NftItemPage nftItem={nftData} />;
 }

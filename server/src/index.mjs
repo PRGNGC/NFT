@@ -18,6 +18,7 @@ import bundlesRouter from "./routes/bundles.mjs";
 import usersRouter from "./routes/users.mjs";
 import authSessionsRouter from "./routes/authSessions.mjs";
 import authJWTRouter from "./routes/authJWT.mjs";
+import ownCharacters from "./routes/ownCharacters.mjs";
 
 const app = express();
 
@@ -67,5 +68,6 @@ app.use(bundlesRouter);
 app.use(usersRouter);
 // app.use(authSessionsRouter);
 app.use(authJWTRouter);
+app.use(ownCharacters);
 
 app.listen(PORT, () => console.log("Server launched successfully"));

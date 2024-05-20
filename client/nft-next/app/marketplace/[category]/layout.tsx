@@ -13,17 +13,12 @@ interface CategoryLayoutTypes {
   params: ParamsType;
 }
 
-export default function CategoryLayout({
-  children,
-}: // params,
-CategoryLayoutTypes) {
+export default function CategoryLayout({ children }: CategoryLayoutTypes) {
   const params = useParams();
   return (
     <>
       {params?.nft === undefined && <PreviewBlock />}
-      {params?.nft === undefined && (
-        <NftNavigation activeCategory={params?.category as string} />
-      )}
+      {params?.nft === undefined && <NftNavigation />}
       {children}
     </>
   );

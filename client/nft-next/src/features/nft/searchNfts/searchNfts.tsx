@@ -1,16 +1,17 @@
 "use client";
 import styles from "./SearchNfts.module.scss";
 import Image from "next/image";
-import { useRouter, useParams, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
 export function SearchNfts() {
   const { push } = useRouter();
-  const params = useParams();
+  const path = usePathname();
   const searchParams = useSearchParams();
 
   function handleOnChange(search: string) {
     if (search.length === 0) {
-      push(`/${params?.category}`);
+      push(`${path}`);
+      // push(`/${params?.category}`);
     }
     if (search.length !== 0) {
       push("?search=" + search);

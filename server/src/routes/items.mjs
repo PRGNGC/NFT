@@ -31,6 +31,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -71,6 +72,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -111,6 +113,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -151,6 +154,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -191,6 +195,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -231,6 +236,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -271,6 +277,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -311,6 +318,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -351,6 +359,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -391,6 +400,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -431,6 +441,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -471,6 +482,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -511,6 +523,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -551,6 +564,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -591,6 +605,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -631,6 +646,7 @@ const items = [
       },
       usedBy: {
         user: "astronaut",
+        userImg: "/images/astronaut.png",
         planet: "Earth",
       },
       created: "08.03.2022",
@@ -690,7 +706,7 @@ router.get("/api/items", (req, res) => {
 router.get("/api/items/:id", (req, res) => {
   const passedCharacterId = req.params.id;
 
-  const filteredItems = items.filter(
+  const filteredItems = items.find(
     (character) => character.id === passedCharacterId
   );
 

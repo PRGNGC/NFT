@@ -8,7 +8,12 @@ interface BigNftImageType {
 export function BigNftImage({ image }: BigNftImageType) {
   return (
     <div className={styles.imageContainer}>
-      <Image src={image} alt="image" width={800} height={800} />
+      <Image
+        src={image}
+        alt="image"
+        fill={true}
+        style={{ objectFit: "contain" }}
+      />
     </div>
   );
 }

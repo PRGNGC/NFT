@@ -594,7 +594,7 @@ router.get("/api/planets", (req, res) => {
 router.get("/api/planets/:id", (req, res) => {
   const passedCharacterId = req.params.id;
 
-  const filteredPlanets = planets.filter(
+  const filteredPlanets = planets.find(
     (character) => character.id === passedCharacterId
   );
 

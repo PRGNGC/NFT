@@ -5,6 +5,7 @@ import { archivo } from "@/app/fonts";
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { login } from "@/app/store/loginSlice/loginSlice";
+import { signupApi } from "@/entities/session/api";
 
 export function SignupForm() {
   const [loginInfo, setLogin] = useState<string>("");
@@ -14,18 +15,7 @@ export function SignupForm() {
   const dispatch = useDispatch();
 
   async function handleAddSubmit() {
-    const response = await fetch("http://localhost:4000/api/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        login: loginInfo,
-        password: password,
-        name: name,
-      }),
-      credentials: "include",
-    });
+    const response = await signupApi(loginInfo, password, name);
 
     const { accessToken } = await response.json();
     const responseStatus = response.status;

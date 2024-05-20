@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react";
 import styles from "./ItemCard.module.scss";
 import Image from "next/image";
-import type { INft, IPlanetNft, IItemNft, IBundleNft } from "../nft/api/types";
+import type { INft, IPlanetNft, IItemNft, IBundleNft } from "../api/types";
 import { getEthPrice } from "@/shared/api/getEthPrice";
 import { archivo } from "@/app/fonts";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface ItemCardProps {
   item: INft;
@@ -15,6 +16,8 @@ interface ItemCardProps {
 export function ItemCard({ item, category }: ItemCardProps) {
   const [data, setData] = useState<{ USD: number } | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const path = usePathname();
+
   useEffect(() => {
     getEthPrice().then((data) => {
       setData(data);
@@ -23,7 +26,7 @@ export function ItemCard({ item, category }: ItemCardProps) {
   }, []);
 
   return (
-    <Link key={item.id} href={`/${category}/${item.id}`}>
+    <Link key={item.id} href={`${path}/${item.id}`}>
       <div className={styles.itemCardBlock}>
         <div className={styles.itemCardImgBlock}>
           <div className={styles.itemTraits}>

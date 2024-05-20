@@ -6,6 +6,16 @@ export default function middleware(req: NextRequest) {
   const verify = req.cookies.get("refreshToken"); // for JWT authentication
   let url = req.url;
 
+  if (url === "http://localhost:3000/marketplace") {
+    return NextResponse.redirect(
+      "http://localhost:3000/marketplace/characters"
+    );
+  }
+
+  if (verify && url === "http://localhost:3000/profile") {
+    return NextResponse.redirect("http://localhost:3000/profile/characters");
+  }
+
   if (!verify && url.includes("/profile")) {
     return NextResponse.redirect("http://localhost:3000/login");
   }

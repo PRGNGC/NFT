@@ -2,23 +2,22 @@ import styles from "./NftNavigation.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { SearchNfts } from "@/features/nft/searchNfts";
+import { usePathname } from "next/navigation";
 
-interface INftNavigation {
-  activeCategory: string;
-}
-
-export function NftNavigation({ activeCategory }: INftNavigation) {
-  const category = activeCategory;
+export function NftNavigation() {
+  const urlPath = usePathname();
+  const mainUrlSegment = urlPath?.split("/")[1];
+  const secondaryUrlSegment = urlPath?.split("/")[2];
 
   return (
     <div className={styles.nftNavigation}>
       <div className={styles.nftNavigationContainer}>
         <nav className={styles.nftNavigationMenu}>
           <ul className={styles.nftNavigationList}>
-            <Link href="/characters">
+            <Link href={`/${mainUrlSegment}/characters`}>
               <li
                 className={
-                  category === "characters"
+                  secondaryUrlSegment === "characters"
                     ? styles.activeNavigationItem
                     : styles.nftNavigationItem
                 }
@@ -32,10 +31,10 @@ export function NftNavigation({ activeCategory }: INftNavigation) {
                 Characters
               </li>
             </Link>
-            <Link href="/planets">
+            <Link href={`/${mainUrlSegment}/planets`}>
               <li
                 className={
-                  category === "planets"
+                  secondaryUrlSegment === "planets"
                     ? styles.activeNavigationItem
                     : styles.nftNavigationItem
                 }
@@ -49,10 +48,10 @@ export function NftNavigation({ activeCategory }: INftNavigation) {
                 Planets
               </li>
             </Link>
-            <Link href="/items">
+            <Link href={`/${mainUrlSegment}/items`}>
               <li
                 className={
-                  category === "items"
+                  secondaryUrlSegment === "items"
                     ? styles.activeNavigationItem
                     : styles.nftNavigationItem
                 }
@@ -66,10 +65,10 @@ export function NftNavigation({ activeCategory }: INftNavigation) {
                 Items
               </li>
             </Link>
-            <Link href="bundles">
+            <Link href={`/${mainUrlSegment}/bundles`}>
               <li
                 className={
-                  category === "bundles"
+                  secondaryUrlSegment === "bundles"
                     ? styles.activeNavigationItem
                     : styles.nftNavigationItem
                 }

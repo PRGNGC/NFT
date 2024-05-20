@@ -1,14 +1,30 @@
 @use "@/app/common" as *;
 
 .smallSpecBlock {
+  width: max-content;
+  max-width: 540px;
+  min-width: 540px;
   color: $custom-neutral-8;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  // @media (max-width: 1200px) {
+  //   min-width: 400px;
+  // }
   .smallSpecCommonInfo {
-    // display: flex;
-    .commonInfoNameId {
+    .commonInfoTraitId {
+      display: flex;
+      gap: 8px;
       .commonInfoId {
         background-color: rgba(48, 178, 140, 0.25);
         border-radius: 6px;
         padding: 3px 6px;
+      }
+      .commonInfoTrait {
+        background-color: rgba(48, 178, 140, 1);
+        border-radius: 6px;
+        padding: 3px 6px;
+        color: white;
       }
     }
     .commonInfoPricesName {
@@ -21,7 +37,6 @@
         letter-spacing: -0.03em;
       }
       .commonInfoPrices {
-        // display: flex;
         .ethPrice {
           display: block;
 
@@ -81,8 +96,9 @@
         line-height: 171%;
         text-align: center;
         cursor: pointer;
-        padding: 12px 50px;
+        padding: 12px 0;
         color: $custom-neutral-6;
+        flex-grow: 1;
       }
       .activeCategory {
         font-weight: 700;
@@ -91,13 +107,77 @@
         text-align: center;
         color: $custom-neutral-8;
         border-radius: 8px;
-        padding: 12px 50px;
+        padding: 12px 0;
         background-color: $custom-neutral-2;
+        flex-grow: 1;
         cursor: pointer;
       }
     }
     .categoriesInfoBlock {
-      
+      .descriptionBlock {
+        .bySection {
+          display: flex;
+          justify-content: space-between;
+          .ownedBy {
+            .ownedByTitle {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 171%;
+              color: $custom-neutral-5;
+            }
+            .ownedByContent {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              .ownerCredentials {
+                .ownerName {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 150%;
+                  text-align: center;
+                  color: $custom-neutral-8;
+                }
+                .ownerId {
+                  font-weight: 600;
+                  font-size: 12px;
+                  line-height: 133%;
+                  letter-spacing: -0.02em;
+                  color: $custom-neutral-5;
+                }
+              }
+            }
+          }
+          .location {
+            .locationTitle {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 171%;
+              color: $custom-neutral-5;
+            }
+            .locationContent {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              .locationCredentials {
+                .locationPlanet {
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 150%;
+                  text-align: center;
+                  color: $custom-neutral-8;
+                }
+                .locationCity {
+                  font-weight: 600;
+                  font-size: 12px;
+                  line-height: 133%;
+                  letter-spacing: -0.02em;
+                  color: $custom-neutral-5;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

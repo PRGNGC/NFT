@@ -76,10 +76,9 @@ router.post("/api/signup", async (req, res) => {
 });
 
 router.get("/api/refresh", (req, res) => {
-  const refreshToken = req.cookies.refreshToken;
-
   try {
-    const verifyRefreshToken = jwt.verify(refreshToken, "token_refresh");
+    const refreshTokenCookie = req.cookies.refreshToken;
+    const verifyRefreshToken = jwt.verify(refreshTokenCookie, "token_refresh");
 
     const { accessToken, refreshToken } = getTokens(login);
 

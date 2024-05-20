@@ -1,19 +1,36 @@
 "use client";
-import { ItemCard } from "@/entities/ItemCard";
+import { ItemCard } from "@/entities/nft/ui";
 import styles from "./NftList.module.scss";
-import type { NftItem } from "@/shared/types/types";
-import { useSearchParams, useParams } from "next/navigation";
+import { useSearchParams, useParams, notFound } from "next/navigation";
 import { loadNfts } from "@/entities/nft/queries";
+import { InfiniteData, UseInfiniteQueryResult } from "@tanstack/react-query";
 
-export function NftList() {
+interface INftList {
+  fetchFunc(
+    category: string,
+    searchQuery: string
+  ): UseInfiniteQueryResult<InfiniteData<any, unknown>, Error>;
+}
+
+export function NftList({ fetchFunc }: INftList) {
   const searchParams = useSearchParams();
   const searchQuery = searchParams?.get("search") as string;
   const category = useParams()?.category as string;
 
-  const { data, isLoading, isError, error, fetchNextPage, hasNextPage } =
-    loadNfts(category, searchQuery);
+  const {
+    data,
+    isLoading,
+    isError,
+    error,
+    fetchNextPage,
+    hasNextPage,
+    status,
+  } = fetchFunc(category, searchQuery);
+  // } = loadNfts(category, searchQuery);
 
   if (isLoading) return <p>Loading...</p>;
+
+  if (status === "error") notFound();
 
   if (isError) return <p>{`${error}`}</p>;
 

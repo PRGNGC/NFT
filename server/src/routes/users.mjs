@@ -21,9 +21,6 @@ router.get("/api/user", async (req, res) => {
   const accessToken = req.headers.authorization.split(" ")[1];
   const refreshToken = req.headers.cookie.split("=")[1];
 
-  // console.log(accessToken);
-  // console.log(accessToken === "null");
-
   try {
     const verifyRefreshToken = jwt.verify(refreshToken, "token_refresh");
     const refreshTokenTimeLeft =
@@ -50,15 +47,18 @@ router.get("/api/user", async (req, res) => {
         maxAge: refreshTokenAge,
         httpOnly: true,
       });
-      return res.status(200).send({ user: user, accessToken: accessToken });
+      return res.status(200).send({
+        user: { name: user.name, userImg: user.userImg },
+        accessToken: accessToken,
+      });
     }
 
-    console.log("here");
     const verifyAccessToken = jwt.verify(accessToken, "token_access");
     const user = await User.findOne({ login: verifyAccessToken.login });
-    return res.status(200).send({ user: user });
+    return res
+      .status(200)
+      .send({ user: { name: user.name, userImg: user.userImg } });
   } catch (err) {
-    console.log("user error happened - " + err);
     return res.status(200).send({ msg: "Error happened" });
   }
 });

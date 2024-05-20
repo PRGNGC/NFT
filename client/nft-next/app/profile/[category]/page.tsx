@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 import { useQuery } from "@tanstack/react-query";
 import { login } from "@/app/store/loginSlice/loginSlice";
+import { NftNavigation } from "@/widgets/NftNavigation";
+import { NftList } from "@/widgets/NftList";
+import { loadNfts } from "@/entities/myNft/queries";
 
 export default function ProfilePage() {
   const dispatch = useDispatch();
@@ -26,12 +29,9 @@ export default function ProfilePage() {
     },
   });
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-  if (isError) {
-    return <p>{error.message}</p>;
-  }
+  if (isLoading) return <p>Loading...</p>;
+
+  if (isError) return <p>{error.message}</p>;
 
   if (isSuccess && data.accessToken !== undefined) {
     dispatch(login(data.accessToken));
@@ -40,6 +40,8 @@ export default function ProfilePage() {
   return (
     <div style={{ color: "white" }} className="profile">
       <p>{data.user.name}</p>
+      <NftNavigation />
+      <NftList fetchFunc={loadNfts} />
     </div>
   );
 }

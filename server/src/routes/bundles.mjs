@@ -590,7 +590,7 @@ router.get("/api/bundles", (req, res) => {
 router.get("/api/bundles/:id", (req, res) => {
   const passedCharacterId = req.params.id;
 
-  const filteredBundles = bundles.filter(
+  const filteredBundles = bundles.find(
     (character) => character.id === passedCharacterId
   );
 

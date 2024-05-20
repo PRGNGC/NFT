@@ -1,6 +1,10 @@
 import styles from './{{pascalCase}}.module.scss'
 
-export function {{pascalCase}}(){
+interface I{{pascalCase}} {
+    
+}
+
+export function {{pascalCase}}({}: I{{pascalCase}}){
     return(
         <div>
             

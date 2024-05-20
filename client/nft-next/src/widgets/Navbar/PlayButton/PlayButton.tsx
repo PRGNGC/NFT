@@ -7,13 +7,14 @@ import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 import { logout } from "@/app/store/loginSlice/loginSlice";
+import { logoutApi } from "@/entities/session/api/sessionApi";
 
 export function PlayButton() {
   const router = useRouter();
   const dispatch = useDispatch();
   const accessToken = useSelector(
     (state: RootState) => state.login.accessToken
-  );
+  ) as string;
 
   return (
     <div>
@@ -31,11 +32,7 @@ export function PlayButton() {
           // router.push("/");
 
           //JWT AUTHENTICATION
-          const res = await fetch("http://localhost:4000/api/logout", {
-            method: "POST",
-            body: JSON.stringify({ accessToken: accessToken }),
-            credentials: "include",
-          });
+          logoutApi(accessToken);
           dispatch(logout());
           router.push("/");
         }}

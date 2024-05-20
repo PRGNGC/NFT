@@ -44,10 +44,18 @@ const characters = [
     history: [
       {
         user: "@tranmautritam",
-        date: "26.03.2022",
+        date: "26.05.2022",
         time: "10:15am",
         userAvatar: "/images/tranmautritamAvatar.png",
         actionType: "purchased",
+        priceETH: "0.08",
+      },
+      {
+        user: "@randomdash",
+        date: "26.05.2022 ",
+        time: "10:15am",
+        userAvatar: "/images/tranmautritamAvatar.png",
+        actionType: "listed",
         priceETH: "0.08",
       },
     ],
