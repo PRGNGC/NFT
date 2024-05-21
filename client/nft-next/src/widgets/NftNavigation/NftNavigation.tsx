@@ -23,7 +23,7 @@ export function NftNavigation() {
                 }
               >
                 <Image
-                  src="/images/characters-icon.png"
+                  src="/images/toggler-img-1.png"
                   alt="icon"
                   width={32}
                   height={32}
@@ -40,7 +40,7 @@ export function NftNavigation() {
                 }
               >
                 <Image
-                  src="/images/planets-icon.png"
+                  src="/images/toggler-img-2.png"
                   alt="icon"
                   width={32}
                   height={32}
@@ -57,7 +57,7 @@ export function NftNavigation() {
                 }
               >
                 <Image
-                  src="/images/items-icon.png"
+                  src="/images/toggler-img-3.png"
                   alt="icon"
                   width={32}
                   height={32}
@@ -74,7 +74,7 @@ export function NftNavigation() {
                 }
               >
                 <Image
-                  src="/images/bundles-icon.png"
+                  src="/images/toggler-img-4.png"
                   alt="icon"
                   width={32}
                   height={32}

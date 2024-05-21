@@ -44,7 +44,7 @@ export function PreviewBlock() {
         <div className={styles.previewBlockStat}>
           <div className={styles.statItem}>
             <Image
-              src="/images/stat-img-1.png"
+              src="/images/preview-img-1.png"
               alt="stat-img"
               width={64}
               height={64}
@@ -58,7 +58,7 @@ export function PreviewBlock() {
           </div>
           <div className={styles.statItem}>
             <Image
-              src="/images/stat-img-2.png"
+              src="/images/preview-img-2.png"
               alt="stat-img"
               width={64}
               height={64}
@@ -72,7 +72,7 @@ export function PreviewBlock() {
           </div>
           <div className={styles.statItem}>
             <Image
-              src="/images/stat-img-3.png"
+              src="/images/preview-img-3.png"
               alt="stat-img"
               width={64}
               height={64}

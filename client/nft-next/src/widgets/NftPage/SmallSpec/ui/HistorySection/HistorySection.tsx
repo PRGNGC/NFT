@@ -1,10 +1,4 @@
-import {
-  INft,
-  IBundleNft,
-  ICharacterNft,
-  IItemNft,
-  IPlanetNft,
-} from "@/entities/nft/api/types";
+import type { INft } from "@/entities/nft/api/types";
 import styles from "./HistorySection.module.scss";
 import Image from "next/image";
 import Link from "next/link";

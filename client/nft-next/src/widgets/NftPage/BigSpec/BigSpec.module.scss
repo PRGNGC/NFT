@@ -1,48 +1,13 @@
-@use "@/app/common";
+@use "@/app/common" as *;
 
 .bigSpecBlock {
-  .bigSpecCommonInfo {
-    display: flex;
-    justify-content: space-between;
-    .nftNameId {
-      .nftId {
-      }
-      .nftName {
-      }
-    }
-    .nftPriceButton {
-      .nftPrice {
-      }
-      .nftButton {
-      }
-    }
+  width: 100%;
+  padding-bottom: 5px;
+  hr {
+    margin: 40px 0;
   }
-  .nftOtherInfo {
+  .secondaryInfo {
     display: flex;
-    justify-content: space-between;
-    .nftDescription {
-      .nftLocation {
-      }
-      .descriptionText {
-      }
-    }
-    .nftDetails {
-      .detailsCreation {
-        .detailsOwnedBy {
-        }
-        .detailsFounded {
-        }
-      }
-      .detailsStat {
-      }
-      .detailsLinks {
-        .etherscanLink {
-        }
-        .metadataLink {
-        }
-      }
-      .detailsHistory {
-      }
-    }
+    gap: 130px;
   }
 }

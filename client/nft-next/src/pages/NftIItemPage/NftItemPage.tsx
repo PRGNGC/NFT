@@ -21,49 +21,12 @@ export function NftItemPage({ nftItem }: NftPageType) {
       >
         <BigNftImage image={nftItem.nftImg} />
 
-        <div className={styles.nftItemPageInfo}>
-          {nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
-            <BigSpec nftItem={nftItem} />
-          ) : (
-            <SmallSpec nftInfo={nftItem} />
-          )}
-        </div>
+        {nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
+          <BigSpec nftItem={nftItem} />
+        ) : (
+          <SmallSpec nftInfo={nftItem} />
+        )}
       </div>
     </div>
-    // <div className={styles.nftItemPage}>
-    //   <div
-    //     className={styles.nftItemPageContainer}
-    //     style={
-    //       nftItem.nftType === "planets" || nftItem.nftType === "bundles"
-    //         ? { color: "black" }
-    //         : {
-    //             display: "flex",
-    //             alignItems: "start",
-    //             justifyContent: "space-between",
-    //             columnGap: "100px",
-    //           }
-    //     }
-    //   >
-    //     {nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
-    //       <BigNftImage image={nftItem.nftImg} />
-    //     ) : (
-    //       <SmallNftImage image={nftItem.nftImg} />
-    //     )}
-    //     <div
-    //       className={styles.nftItemPageInfo}
-    //       style={
-    //         nftItem.nftType === "planets" || nftItem.nftType === "bundles"
-    //           ? { margin: "0 auto", maxWidth: "1200px" }
-    //           : { flexGrow: "1" }
-    //       }
-    //     >
-    //       {nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
-    //         <BigSpec nftItem={nftItem} />
-    //       ) : (
-    //         <SmallSpec nftInfo={nftItem} />
-    //       )}
-    //     </div>
-    //   </div>
-    // </div>
   );
 }

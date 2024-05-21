@@ -32,25 +32,26 @@ export interface ICharacterNft extends INft {
     };
     created: string;
     specification: {
-      level: number;
-      health: number;
-      strength: number;
-      morale: number;
-      mana: number;
-      gene: string;
+      level: { field: string; value: number };
+      health: { field: string; value: number };
+      strength: { field: string; value: number };
+      morale: { field: string; value: number };
+      mana: { field: string; value: number };
+      gene: { field: string; value: string };
     };
     property: {
-      emotion: string;
-      ears: string;
-      antennas: string;
-      tail: string;
-      color: string;
-      texture: string;
+      emotion: { field: string; value: string };
+      ears: { field: string; value: string };
+      antennas: { field: string; value: string };
+      tail: { field: string; value: string };
+      color: { field: string; value: string };
+      texture: { field: string; value: string };
     };
   };
 }
 
 export interface IPlanetNft extends INft {
+  nftSystem: string;
   nftCoordinates: string;
   nftDetails: {
     ownedBy: {
@@ -60,12 +61,12 @@ export interface IPlanetNft extends INft {
     };
     found: string;
     specification: {
-      residents: number;
-      soldiers: number;
-      wood: number;
-      gold: number;
-      iron: number;
-      stone: number;
+      residents: { field: string; value: number };
+      soldiers: { field: string; value: number };
+      wood: { field: string; value: number };
+      gold: { field: string; value: number };
+      iron: { field: string; value: number };
+      stone: { field: string; value: number };
     };
   };
 }
@@ -85,18 +86,19 @@ export interface IItemNft extends INft {
     };
     created: string;
     specification: {
-      ammo: number;
-      speed: string;
-      firingRange: string;
-      reuse: string;
-      waterproof: string;
-      fireResistant: string;
+      ammo: { field: string; value: number };
+      speed: { field: string; value: string };
+      firingRange: { field: string; value: string };
+      reuse: { field: string; value: string };
+      waterproof: { field: string; value: string };
+      fireResistant: { field: string; value: string };
     };
   };
 }
 
 export interface IBundleNft extends INft {
   nftLevelRequirement: number;
+  itemsInBundle: string[];
   nftDetails: {
     ownedBy: {
       owner: string;
@@ -105,12 +107,12 @@ export interface IBundleNft extends INft {
     };
     usedFor: string[];
     specification: {
-      ammo: number;
-      speed: string;
-      firingRange: string;
-      reuse: string;
-      waterproof: string;
-      fireResistant: string;
+      ammo: { field: string; value: number };
+      speed: { field: string; value: string };
+      firingRange: { field: string; value: string };
+      reuse: { field: string; value: string };
+      waterproof: { field: string; value: string };
+      fireResistant: { field: string; value: string };
     };
   };
 }

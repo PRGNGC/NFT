@@ -1,12 +1,6 @@
 import styles from "./DetailsSection.module.scss";
 import Image from "next/image";
-import type {
-  INft,
-  IBundleNft,
-  ICharacterNft,
-  IItemNft,
-  IPlanetNft,
-} from "@/entities/nft/api/types";
+import type { INft, IItemNft } from "@/entities/nft/api/types";
 
 interface IDetailsSection {
   nft: INft;

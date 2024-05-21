@@ -64,26 +64,24 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
           <div className={styles.statBlock}>
             <h4 className={styles.statBlockHeader}>Stats</h4>
             <div className={styles.statContent}>
-              {Object.keys((nft as ICharacterNft).nftDetails.specification).map(
-                (key) => {
-                  return (
-                    <div className={styles.statItem}>
-                      <Image
-                        src="/images/astronaut.png"
-                        alt="img"
-                        width={48}
-                        height={48}
-                      />
-                      <div className={styles.statCredentials}>
-                        <p className={styles.statPlanet}>{key}</p>
-                        <p className={styles.statCity}>
-                          {(nft as ICharacterNft).nftDetails.specification[key]}
-                        </p>
-                      </div>
+              {Object.values(
+                (nft as ICharacterNft).nftDetails.specification
+              ).map((value) => {
+                return (
+                  <div className={styles.statItem}>
+                    <Image
+                      src="/images/astronaut.png"
+                      alt="img"
+                      width={48}
+                      height={48}
+                    />
+                    <div className={styles.statCredentials}>
+                      <p className={styles.statPlanet}>{value.field}</p>
+                      <p className={styles.statCity}>{value.value}</p>
                     </div>
-                  );
-                }
-              )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -92,8 +90,8 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
           <div className={styles.propertyBlock}>
             <h4 className={styles.propertyBlockHeader}>Property</h4>
             <div className={styles.propertyContent}>
-              {Object.keys((nft as ICharacterNft).nftDetails.property).map(
-                (key) => {
+              {Object.values((nft as ICharacterNft).nftDetails.property).map(
+                (value) => {
                   return (
                     <div className={styles.propertyItem}>
                       <Image
@@ -103,10 +101,8 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
                         height={48}
                       />
                       <div className={styles.propertyCredentials}>
-                        <p className={styles.propertyPlanet}>{key}</p>
-                        <p className={styles.propertyCity}>
-                          {(nft as ICharacterNft).nftDetails.property[key]}
-                        </p>
+                        <p className={styles.propertyPlanet}>{value.field}</p>
+                        <p className={styles.propertyCity}>{value.value}</p>
                       </div>
                     </div>
                   );
@@ -165,8 +161,8 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
           <div className={styles.statBlock}>
             <h4>Specification</h4>
             <div className={styles.statContent}>
-              {Object.keys((nft as IItemNft).nftDetails.specification).map(
-                (key) => {
+              {Object.values((nft as IItemNft).nftDetails.specification).map(
+                (value) => {
                   return (
                     <div className={styles.statItem}>
                       <Image
@@ -176,10 +172,8 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
                         height={48}
                       />
                       <div className={styles.statCredentials}>
-                        <p className={styles.statPlanet}>{key}</p>
-                        <p className={styles.statCity}>
-                          {(nft as IItemNft).nftDetails.specification[key]}
-                        </p>
+                        <p className={styles.statPlanet}>{value.field}</p>
+                        <p className={styles.statCity}>{value.value}</p>
                       </div>
                     </div>
                   );
