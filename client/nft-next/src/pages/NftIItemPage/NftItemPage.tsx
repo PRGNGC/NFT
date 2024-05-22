@@ -3,6 +3,7 @@ import { BigNftImage } from "@/widgets/NftPage/BigNftImage";
 import { SmallSpec } from "@/widgets/NftPage/SmallSpec";
 import { BigSpec } from "@/widgets/NftPage/BigSpec";
 import type { INft } from "@/entities/nft/api/types";
+import { SimilarNftsSlider } from "@/widgets/SimilarNftsSlider";
 
 interface NftPageType {
   nftItem: INft;
@@ -26,6 +27,9 @@ export function NftItemPage({ nftItem }: NftPageType) {
         ) : (
           <SmallSpec nftInfo={nftItem} />
         )}
+      </div>
+      <div className={styles.similarNftsSlider}>
+        <SimilarNftsSlider nfts={nftItem.similarNfts} />
       </div>
     </div>
   );

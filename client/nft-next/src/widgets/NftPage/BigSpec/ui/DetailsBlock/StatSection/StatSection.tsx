@@ -18,12 +18,7 @@ export function StatSection({ nftItem }: IStatSection) {
             ).map((value) => {
               return (
                 <div className={styles.statItem}>
-                  <Image
-                    src="/images/astronaut.png"
-                    alt="img"
-                    width={48}
-                    height={48}
-                  />
+                  <Image src={value.img} alt="img" width={48} height={48} />
                   <div className={styles.statCredentials}>
                     <p className={styles.statPlanet}>{value.field}</p>
                     <p className={styles.statCity}>{value.value}</p>
@@ -44,12 +39,7 @@ export function StatSection({ nftItem }: IStatSection) {
             ).map((value) => {
               return (
                 <div className={styles.statItem}>
-                  <Image
-                    src="/images/astronaut.png"
-                    alt="img"
-                    width={48}
-                    height={48}
-                  />
+                  <Image src={value.img} alt="img" width={48} height={48} />
                   <div className={styles.statCredentials}>
                     <p className={styles.statPlanet}>{value.field}</p>
                     <p className={styles.statCity}>{value.value}</p>

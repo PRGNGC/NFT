@@ -53,6 +53,15 @@
       justify-content: flex-start;
       flex-direction: row;
       gap: 12px;
+      .foundImg {
+        background: rgba(159, 115, 230, 0.25);
+        border-radius: 40px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .foundCalendar {
         .foundDay {
           font-weight: 700;

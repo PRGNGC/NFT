@@ -45,18 +45,18 @@
       gap: 12px;
       .createdCredentials {
         .createdPlanet {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 150%;
-          text-align: center;
-          color: $custom-neutral-8;
-        }
-        .createdCity {
           font-weight: 600;
           font-size: 12px;
           line-height: 133%;
           letter-spacing: -0.02em;
           color: $custom-neutral-5;
+        }
+        .createdCity {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          text-align: center;
+          color: $custom-neutral-8;
         }
       }
     }

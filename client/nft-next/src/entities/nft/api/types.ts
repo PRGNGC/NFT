@@ -8,6 +8,7 @@ export interface INft {
   nftCategory: string;
   nftType: string;
   nftTraits?: string[];
+  similarNfts: string[];
   history: {
     user: string;
     date: string;
@@ -32,12 +33,12 @@ export interface ICharacterNft extends INft {
     };
     created: string;
     specification: {
-      level: { field: string; value: number };
-      health: { field: string; value: number };
-      strength: { field: string; value: number };
-      morale: { field: string; value: number };
-      mana: { field: string; value: number };
-      gene: { field: string; value: string };
+      level: { field: string; value: number; img: string };
+      health: { field: string; value: number; img: string };
+      strength: { field: string; value: number; img: string };
+      morale: { field: string; value: number; img: string };
+      mana: { field: string; value: number; img: string };
+      gene: { field: string; value: string; img: string };
     };
     property: {
       emotion: { field: string; value: string };
@@ -61,12 +62,12 @@ export interface IPlanetNft extends INft {
     };
     found: string;
     specification: {
-      residents: { field: string; value: number };
-      soldiers: { field: string; value: number };
-      wood: { field: string; value: number };
-      gold: { field: string; value: number };
-      iron: { field: string; value: number };
-      stone: { field: string; value: number };
+      residents: { field: string; value: number; img: string };
+      soldiers: { field: string; value: number; img: string };
+      wood: { field: string; value: number; img: string };
+      gold: { field: string; value: number; img: string };
+      iron: { field: string; value: number; img: string };
+      stone: { field: string; value: number; img: string };
     };
   };
 }
@@ -86,12 +87,12 @@ export interface IItemNft extends INft {
     };
     created: string;
     specification: {
-      ammo: { field: string; value: number };
-      speed: { field: string; value: string };
-      firingRange: { field: string; value: string };
-      reuse: { field: string; value: string };
-      waterproof: { field: string; value: string };
-      fireResistant: { field: string; value: string };
+      ammo: { field: string; value: number; img: string };
+      speed: { field: string; value: string; img: string };
+      firingRange: { field: string; value: string; img: string };
+      reuse: { field: string; value: string; img: string };
+      waterproof: { field: string; value: string; img: string };
+      fireResistant: { field: string; value: string; img: string };
     };
   };
 }
@@ -107,12 +108,12 @@ export interface IBundleNft extends INft {
     };
     usedFor: string[];
     specification: {
-      ammo: { field: string; value: number };
-      speed: { field: string; value: string };
-      firingRange: { field: string; value: string };
-      reuse: { field: string; value: string };
-      waterproof: { field: string; value: string };
-      fireResistant: { field: string; value: string };
+      ammo: { field: string; value: number; img: string };
+      speed: { field: string; value: string; img: string };
+      firingRange: { field: string; value: string; img: string };
+      reuse: { field: string; value: string; img: string };
+      waterproof: { field: string; value: string; img: string };
+      fireResistant: { field: string; value: string; img: string };
     };
   };
 }

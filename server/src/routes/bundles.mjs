@@ -13,7 +13,7 @@ const bundles = [
     nftImg: "/images/bundle-1.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-8.png", "/images/item-11.png"],
+    itemsInBundle: ["/images/item-8.png", "/images/item-2.png"],
 
     nftDetails: {
       ownedBy: {
@@ -23,12 +23,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-4.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-1.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-4.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-1.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-2.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-4.png",
+        },
       },
     },
     history: [
@@ -51,7 +63,7 @@ const bundles = [
     nftImg: "/images/bundle-2.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-8.png", "/images/item-11.png"],
+    itemsInBundle: ["/images/item-6.png", "/images/item-9.png"],
 
     nftDetails: {
       ownedBy: {
@@ -61,12 +73,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-4.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-1.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-1.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-6.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-6.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-5.png",
+        },
       },
     },
     history: [
@@ -89,7 +113,7 @@ const bundles = [
     nftImg: "/images/bundle-3.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-9.png", "/images/item-5.png"],
+    itemsInBundle: ["/images/item-6.png", "/images/item-10.png"],
 
     nftDetails: {
       ownedBy: {
@@ -99,12 +123,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-6.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-2.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-2.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-3.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-2.png",
+        },
       },
     },
     history: [
@@ -127,7 +163,7 @@ const bundles = [
     nftImg: "/images/bundle-4.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-4.png", "/images/item-3.png"],
+    itemsInBundle: ["/images/item-1.png", "/images/item-9.png"],
 
     nftDetails: {
       ownedBy: {
@@ -137,12 +173,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-2.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-5.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-2.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-4.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-6.png",
+        },
       },
     },
     history: [
@@ -165,7 +213,7 @@ const bundles = [
     nftImg: "/images/bundle-5.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-2.png", "/images/item-8.png"],
+    itemsInBundle: ["/images/item-3.png", "/images/item-12.png"],
 
     nftDetails: {
       ownedBy: {
@@ -175,12 +223,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-2.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-3.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-6.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-6.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-4.png",
+        },
       },
     },
     history: [
@@ -203,7 +263,7 @@ const bundles = [
     nftImg: "/images/bundle-6.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-1.png", "/images/item-9.png"],
+    itemsInBundle: ["/images/item-3.png", "/images/item-8.png"],
 
     nftDetails: {
       ownedBy: {
@@ -213,12 +273,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-5.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-4.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-4.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-1.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-1.png",
+        },
       },
     },
     history: [
@@ -241,7 +313,7 @@ const bundles = [
     nftImg: "/images/bundle-7.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-4.png", "/images/item-7.png"],
+    itemsInBundle: ["/images/item-4.png", "/images/item-8.png"],
 
     nftDetails: {
       ownedBy: {
@@ -251,12 +323,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-4.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-4.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-6.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-1.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-1.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-1.png",
+        },
       },
     },
     history: [
@@ -279,7 +363,7 @@ const bundles = [
     nftImg: "/images/bundle-8.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-10.png", "/images/item-12.png"],
+    itemsInBundle: ["/images/item-5.png", "/images/item-11.png"],
 
     nftDetails: {
       ownedBy: {
@@ -289,12 +373,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-2.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-5.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-5.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-3.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-1.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-3.png",
+        },
       },
     },
     history: [
@@ -317,7 +413,7 @@ const bundles = [
     nftImg: "/images/bundle-1.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-5.png", "/images/item-13.png"],
+    itemsInBundle: ["/images/item-2.png", "/images/item-8.png"],
 
     nftDetails: {
       ownedBy: {
@@ -327,12 +423,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-1.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-1.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-2.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-2.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-4.png",
+        },
       },
     },
     history: [
@@ -355,7 +463,7 @@ const bundles = [
     nftImg: "/images/bundle-2.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-8.png", "/images/item-11.png"],
+    itemsInBundle: ["/images/item-6.png", "/images/item-9.png"],
 
     nftDetails: {
       ownedBy: {
@@ -365,12 +473,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-1.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-4.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-6.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-4.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-6.png",
+        },
       },
     },
     history: [
@@ -393,7 +513,7 @@ const bundles = [
     nftImg: "/images/bundle-3.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-5.png", "/images/item-10.png"],
+    itemsInBundle: ["/images/item-6.png", "/images/item-10.png"],
 
     nftDetails: {
       ownedBy: {
@@ -403,12 +523,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-4.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-3.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-6.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-3.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-5.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-4.png",
+        },
       },
     },
     history: [
@@ -431,7 +563,7 @@ const bundles = [
     nftImg: "/images/bundle-4.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-13.png", "/images/item-6.png"],
+    itemsInBundle: ["/images/item-1.png", "/images/item-9.png"],
 
     nftDetails: {
       ownedBy: {
@@ -441,12 +573,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-5.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-6.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-5.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-2.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-4.png",
+        },
       },
     },
     history: [
@@ -469,7 +613,7 @@ const bundles = [
     nftImg: "/images/bundle-5.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-4.png", "/images/item-7.png"],
+    itemsInBundle: ["/images/item-3.png", "/images/item-12.png"],
 
     nftDetails: {
       ownedBy: {
@@ -479,12 +623,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-2.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-4.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-4.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-4.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-3.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-3.png",
+        },
       },
     },
     history: [
@@ -507,7 +663,7 @@ const bundles = [
     nftImg: "/images/bundle-6.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-10.png", "/images/item-4.png"],
+    itemsInBundle: ["/images/item-3.png", "/images/item-8.png"],
 
     nftDetails: {
       ownedBy: {
@@ -517,12 +673,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-5.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-3.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-3.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-3.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-1.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-3.png",
+        },
       },
     },
     history: [
@@ -545,7 +713,7 @@ const bundles = [
     nftImg: "/images/bundle-7.png",
     nftTrait: "new",
     nftLevelRequirement: 5,
-    itemsInBundle: ["/images/item-4.png", "/images/item-9.png"],
+    itemsInBundle: ["/images/item-4.png", "/images/item-8.png"],
 
     nftDetails: {
       ownedBy: {
@@ -555,12 +723,24 @@ const bundles = [
       },
       usedFor: ["/images/astronaut.png", "/images/lumburr.png"],
       specification: {
-        ammo: { field: "Ammo", value: 200 },
-        speed: { field: "Speed", value: "1km/s" },
-        firingRange: { field: "Firing range", value: "3km" },
-        reuse: { field: "Reuse", value: "No" },
-        waterproof: { field: "Waterproof", value: "Yes" },
-        fireResistant: { field: "Fire resistant", value: "Unknown" },
+        ammo: { field: "Ammo", value: 200, img: "/images/stat-2.png" },
+        speed: { field: "Speed", value: "1km/s", img: "/images/stat-6.png" },
+        firingRange: {
+          field: "Firing range",
+          value: "3km",
+          img: "/images/stat-5.png",
+        },
+        reuse: { field: "Reuse", value: "No", img: "/images/stat-4.png" },
+        waterproof: {
+          field: "Waterproof",
+          value: "Yes",
+          img: "/images/stat-5.png",
+        },
+        fireResistant: {
+          field: "Fire resistant",
+          value: "Unknown",
+          img: "/images/stat-1.png",
+        },
       },
     },
     history: [

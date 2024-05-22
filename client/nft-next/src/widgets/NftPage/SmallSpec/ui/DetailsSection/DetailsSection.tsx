@@ -16,8 +16,8 @@ export function DetailsSection({ nft }: IDetailsSection) {
             <Image
               src={(nft as IItemNft).nftDetails.ownedBy.ownerImg}
               alt="img"
-              width={24}
-              height={24}
+              width={48}
+              height={48}
             />
             <div className={styles.ownerCredentials}>
               <p className={styles.ownerName}>
@@ -35,8 +35,8 @@ export function DetailsSection({ nft }: IDetailsSection) {
             <Image
               src="/images/astronaut.png"
               alt="img"
-              width={24}
-              height={24}
+              width={48}
+              height={48}
             />
             <div className={styles.createdCredentials}>
               <p className={styles.createdUser}>

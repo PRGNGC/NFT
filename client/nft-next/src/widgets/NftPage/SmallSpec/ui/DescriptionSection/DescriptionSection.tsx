@@ -23,7 +23,7 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
               <h4 className={styles.ownedByTitle}>Owned by</h4>
               <div className={styles.ownedByContent}>
                 <Image
-                  src={"/images/astronaut.png"}
+                  src={(nft as ICharacterNft).nftDetails.ownedBy.ownerImg}
                   alt="img"
                   width={48}
                   height={48}
@@ -42,7 +42,7 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
               <h4 className={styles.locationTitle}>Location</h4>
               <div className={styles.locationContent}>
                 <Image
-                  src={"/images/astronaut.png"}
+                  src={(nft as ICharacterNft).nftDetails.location.planetImg}
                   alt="img"
                   width={48}
                   height={48}
@@ -69,12 +69,8 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
               ).map((value) => {
                 return (
                   <div className={styles.statItem}>
-                    <Image
-                      src="/images/astronaut.png"
-                      alt="img"
-                      width={48}
-                      height={48}
-                    />
+                    <Image src={value.img} alt="img" width={48} height={48} />
+
                     <div className={styles.statCredentials}>
                       <p className={styles.statPlanet}>{value.field}</p>
                       <p className={styles.statCity}>{value.value}</p>
@@ -165,12 +161,7 @@ export function DescriptionSection({ nft }: IDescriptionSection) {
                 (value) => {
                   return (
                     <div className={styles.statItem}>
-                      <Image
-                        src="/images/astronaut.png"
-                        alt="img"
-                        width={48}
-                        height={48}
-                      />
+                      <Image src={value.img} alt="img" width={48} height={48} />
                       <div className={styles.statCredentials}>
                         <p className={styles.statPlanet}>{value.field}</p>
                         <p className={styles.statCity}>{value.value}</p>

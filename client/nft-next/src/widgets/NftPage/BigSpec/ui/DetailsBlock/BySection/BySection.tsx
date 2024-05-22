@@ -1,6 +1,7 @@
 import styles from "./BySection.module.scss";
 import type { INft, IBundleNft, IPlanetNft } from "@/entities/nft/api/types";
 import Image from "next/image";
+import { CalendarSvgImg } from "@/shared/ui/icons/CalendarSvgImg";
 
 interface IBySection {
   nftItem: INft;
@@ -12,7 +13,12 @@ export function BySection({ nftItem }: IBySection) {
       <div className={styles.ownedBy}>
         <h4 className={styles.ownedByTitle}>Owned by</h4>
         <div className={styles.ownedByContent}>
-          <Image src="/images/ava.png" alt="img" width={48} height={48} />
+          <Image
+            src={(nftItem as IBundleNft).nftDetails.ownedBy.ownerImg}
+            alt="img"
+            width={48}
+            height={48}
+          />
           <div className={styles.ownerCredentials}>
             <p className={styles.ownerName}>
               {(nftItem as IBundleNft).nftDetails.ownedBy.owner}
@@ -27,12 +33,9 @@ export function BySection({ nftItem }: IBySection) {
         <div className={styles.found}>
           <h4 className={styles.foundTitle}>Found</h4>
           <div className={styles.foundContent}>
-            <Image
-              src="/images/astronaut.png"
-              alt="img"
-              width={48}
-              height={48}
-            />
+            <div className={styles.foundImg}>
+              <CalendarSvgImg />
+            </div>
             <div className={styles.foundCalendar}>
               <p className={styles.foundDay}>8 days ago</p>
               <p className={styles.foundDate}>

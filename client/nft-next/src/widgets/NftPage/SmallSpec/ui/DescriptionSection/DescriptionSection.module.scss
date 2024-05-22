@@ -86,6 +86,38 @@
         }
       }
     }
+    .usedBy {
+      .usedByTitle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 171%;
+        color: $custom-neutral-5;
+      }
+      .usedByContent {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 12px;
+        .usedByCredentials {
+          .usedByUser {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: $custom-neutral-8;
+          }
+          .usedByPlanet {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 133%;
+            letter-spacing: -0.02em;
+            color: $custom-neutral-5;
+          }
+        }
+      }
+    }
   }
   .statBlock {
     .statBlockHeader {
