@@ -1,6 +1,6 @@
-import styles from "./RightArrowSvgImg.module.scss";
+import styles from "./LeftArrowSvgImg.module.scss";
 
-export function RightArrowSvgImg() {
+export function LeftArrowSvgImg() {
   return (
     <svg
       width="24"
@@ -10,7 +10,7 @@ export function RightArrowSvgImg() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M13.811 5.75L20.25 12M20.25 12L13.811 18.25M20.25 12H3.75"
+        d="M10.189 18.25L3.75 12M3.75 12L10.189 5.75M3.75 12L20.25 12"
         stroke="#494E5B"
         stroke-width="1.5"
         stroke-miterlimit="10"

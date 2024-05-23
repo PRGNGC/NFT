@@ -2,27 +2,23 @@
 import styles from "./SimilarNftsSlider.module.scss";
 import Link from "next/link";
 import { RightArrowSvgImg } from "@/shared/ui/icons/RightArrowSvgImg";
-import { INft } from "@/entities/nft/api/types";
+import { LeftArrowSvgImg } from "@/shared/ui/icons/LeftArrowSvgImg";
+import type { INft } from "@/entities/nft/api/types";
 import { loadNftsForSlider } from "@/entities/nft/queries";
 import { useParams } from "next/navigation";
-// Slider
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "./slider.scss";
-// import "swiper/css/pagination";
-// import { Pagination } from "swiper/modules";
-// import { ItemCard } from "@/entities/nft/ui";
-import { register } from "swiper/element/bundle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { ItemCard } from "@/entities/nft/ui";
+import { useRef } from "react";
 
 interface ISimilarNftsSlider {
   nfts: string[];
 }
 
-register();
-
 export function SimilarNftsSlider({ nfts }: ISimilarNftsSlider) {
   const category = useParams()?.category as string;
   const { isLoading, isError, error, data } = loadNftsForSlider(category, nfts);
+  const swiperRef = useRef<any>(null);
 
   if (isLoading) {
     <div>Loading..</div>;
@@ -41,17 +37,10 @@ export function SimilarNftsSlider({ nfts }: ISimilarNftsSlider) {
         </Link>
       </div>
       <div className={styles.similarNftsSlider}>
-        {/* <swiper-container>
-          <swiper-slide>Slide 1</swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-        </swiper-container> */}
-        {/* <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
+        <Swiper
           loop={true}
-          pagination={{
-            clickable: true,
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
           breakpoints={{
             640: {
@@ -63,11 +52,10 @@ export function SimilarNftsSlider({ nfts }: ISimilarNftsSlider) {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 5,
-              spaceBetween: 50,
+              slidesPerView: 3,
+              spaceBetween: 30,
             },
           }}
-          modules={[Pagination]}
           className={styles.sliderBlock}
         >
           {data?.map((item: INft) => {
@@ -77,8 +65,15 @@ export function SimilarNftsSlider({ nfts }: ISimilarNftsSlider) {
               </SwiperSlide>
             );
           })}
-        
-        </Swiper> */}
+        </Swiper>
+        <div className={styles.sliderArrows}>
+          <span onClick={() => swiperRef.current.slidePrev()}>
+            <LeftArrowSvgImg />
+          </span>
+          <span onClick={() => swiperRef.current.slideNext()}>
+            <RightArrowSvgImg />
+          </span>
+        </div>
       </div>
     </div>
   );
