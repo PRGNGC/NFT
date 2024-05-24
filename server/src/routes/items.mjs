@@ -12,6 +12,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -65,6 +72,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -118,6 +132,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -171,6 +192,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-4.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -224,6 +252,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-5.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -277,6 +312,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-6.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -330,6 +372,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-7.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -383,6 +432,13 @@ const items = [
     nftName: "Bunny",
     nftImg: "/images/item-8.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -436,6 +492,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-9.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -489,6 +552,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-10.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -542,6 +612,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-11.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -595,6 +672,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-12.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -648,6 +732,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-13.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -701,6 +792,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -754,6 +852,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -807,6 +912,13 @@ const items = [
     nftName: "Gunny",
     nftImg: "/images/item-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "de98bccc-4586-5476-bc0b-30e053274e80",
+      "c7e2444c-b833-593f-9f0c-41d22f0e6309",
+      "3a20b98d-3168-5783-8bef-f40eb8561f3e",
+      "64357974-bbb2-506c-9b5b-d210b7c8977d",
+      "03e07ba9-a6c0-5b01-9265-1a8308717dbd",
+    ],
     nftLevelRequirement: 5,
     history: [
       {
@@ -907,6 +1019,13 @@ router.get("/api/items/:id", (req, res) => {
   }
 
   res.status(200).send(filteredItems);
+});
+
+router.post("/api/items/slider", (req, res) => {
+  const { nfts } = req.body;
+  console.log(nfts);
+
+  return res.json(items.filter((item) => nfts.includes(item.id)));
 });
 
 export default router;

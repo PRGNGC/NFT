@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import styles from "./ItemCard.module.scss";
 import Image from "next/image";
-import type { INft, IPlanetNft, IItemNft, IBundleNft } from "../api/types";
+import type { INft, IPlanetNft, IItemNft, IBundleNft } from "../../api/types";
 import { getEthPrice } from "@/shared/api/getEthPrice";
 import { archivo } from "@/app/fonts";
 import Link from "next/link";

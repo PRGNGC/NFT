@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
 import { useQuery } from "@tanstack/react-query";
 import { login } from "@/app/store/loginSlice/loginSlice";
-import { NftNavigation } from "@/widgets/NftNavigation";
-import { NftList } from "@/widgets/NftList";
-import { loadNfts } from "@/entities/myNft/queries";
+import { Profile } from "@/pages/Profile";
+import { UserInfoBlock } from "@/widgets/UserInfoBlock";
+import { LinksBanner } from "@/widgets/LinksBanner";
 
 export default function ProfilePage() {
   const dispatch = useDispatch();
@@ -38,10 +38,9 @@ export default function ProfilePage() {
   }
 
   return (
-    <div style={{ color: "white" }} className="profile">
-      <p>{data.user.name}</p>
-      <NftNavigation />
-      <NftList fetchFunc={loadNfts} />
+    <div style={{ backgroundColor: "#fcfcf9" }}>
+      <UserInfoBlock userInfo={data.user} />
+      <Profile />
     </div>
   );
 }

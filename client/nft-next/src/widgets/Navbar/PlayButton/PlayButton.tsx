@@ -17,36 +17,42 @@ export function PlayButton() {
   ) as string;
 
   return (
-    <div>
+    <div className={styles.buttonsBlock}>
       <Link href="/" className={styles.playButton}>
         Play Now
       </Link>
 
-      <button
-        className={styles.playButton}
-        onClick={async () => {
-          // SESSION AUTHENTICATION
-          // const res = await fetch("http://localhost:4000/api/logout", {
-          //   credentials: "include",
-          // });
-          // router.push("/");
+      {accessToken && (
+        <button
+          className={styles.playButton}
+          onClick={async () => {
+            // SESSION AUTHENTICATION
+            // const res = await fetch("http://localhost:4000/api/logout", {
+            //   credentials: "include",
+            // });
+            // router.push("/");
 
-          //JWT AUTHENTICATION
-          logoutApi(accessToken);
-          dispatch(logout());
-          router.push("/");
-        }}
-      >
-        Log Out
-      </button>
+            //JWT AUTHENTICATION
+            logoutApi(accessToken);
+            dispatch(logout());
+            router.push("/");
+          }}
+        >
+          Log Out
+        </button>
+      )}
 
-      <Link href="/login" className={styles.playButton}>
-        Log In
-      </Link>
+      {!accessToken && (
+        <Link href="/login" className={styles.playButton}>
+          Log In
+        </Link>
+      )}
 
-      <Link href="/signup" className={styles.playButton}>
-        Sign Up
-      </Link>
+      {!accessToken && (
+        <Link href="/signup" className={styles.playButton}>
+          Sign Up
+        </Link>
+      )}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import styles from "./MenuBurger.module.scss";
 import { useDispatch } from "react-redux";
 import { change } from "@/app/store/menuSlice/menuSlice";
+import Link from "next/link";
 
 export function MenuBurger() {
   const dispatch = useDispatch();
@@ -14,14 +15,24 @@ export function MenuBurger() {
       className={styles.menuBurgerBlock}
     >
       <div className={styles.menuBurger}>
-        <span></span>
-        <span></span>
+        <div className={styles.burger}>
+          <span></span>
+          <span></span>
+        </div>
         <nav className={styles.menuBlock}>
           <ul className={styles.menuList}>
-            <li className={styles.menuItem}>Roadmap</li>
-            <li className={styles.menuItem}>Roadmap</li>
-            <li className={styles.menuItem}>Roadmap</li>
-            <li className={styles.menuItem}>Roadmap</li>
+            <Link href="/marketplace/characters" className={styles.menuItem}>
+              Marketplace
+            </Link>
+            <Link href="/" className={styles.menuItem}>
+              Game play
+            </Link>
+            <Link href="/" className={styles.menuItem}>
+              Feature & benefits
+            </Link>
+            <Link href="/" className={styles.menuItem}>
+              Roadmap
+            </Link>
           </ul>
         </nav>
       </div>

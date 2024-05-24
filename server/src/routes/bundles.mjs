@@ -12,6 +12,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-8.png", "/images/item-2.png"],
 
@@ -62,6 +69,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-6.png", "/images/item-9.png"],
 
@@ -112,6 +126,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-6.png", "/images/item-10.png"],
 
@@ -162,6 +183,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-4.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-1.png", "/images/item-9.png"],
 
@@ -212,6 +240,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-5.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-3.png", "/images/item-12.png"],
 
@@ -262,6 +297,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-6.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-3.png", "/images/item-8.png"],
 
@@ -312,6 +354,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-7.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-4.png", "/images/item-8.png"],
 
@@ -362,6 +411,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-8.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-5.png", "/images/item-11.png"],
 
@@ -412,6 +468,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-2.png", "/images/item-8.png"],
 
@@ -462,6 +525,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-6.png", "/images/item-9.png"],
 
@@ -512,6 +582,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-6.png", "/images/item-10.png"],
 
@@ -562,6 +639,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-4.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-1.png", "/images/item-9.png"],
 
@@ -612,6 +696,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-5.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-3.png", "/images/item-12.png"],
 
@@ -662,6 +753,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-6.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-3.png", "/images/item-8.png"],
 
@@ -712,6 +810,13 @@ const bundles = [
     nftName: "Combo",
     nftImg: "/images/bundle-7.png",
     nftTrait: "new",
+    similarNfts: [
+      "881befdd-d53c-501f-aaa7-5b324ab71d33",
+      "645020a9-b5d7-59e3-97fe-7ba0125b1d1f",
+      "3b06a358-585a-5a85-aa51-390d1c8e7e39",
+      "5fcd20bf-c6b6-56bb-bcc9-74e3ff9da77e",
+      "ead45871-9382-5e32-a8ab-7e25fab71661",
+    ],
     nftLevelRequirement: 5,
     itemsInBundle: ["/images/item-4.png", "/images/item-8.png"],
 
@@ -809,6 +914,13 @@ router.get("/api/bundles/:id", (req, res) => {
   }
 
   res.status(200).send(filteredBundles);
+});
+
+router.post("/api/bundles/slider", (req, res) => {
+  const { nfts } = req.body;
+  console.log(nfts);
+
+  return res.json(bundles.filter((bundle) => nfts.includes(bundle.id)));
 });
 
 export default router;

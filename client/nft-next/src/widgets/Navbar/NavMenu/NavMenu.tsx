@@ -20,9 +20,9 @@ export function NavMenu() {
             dispatch(close());
           }}
           className={styles.navMenuItem}
-          href="/"
+          href="/marketplace/characters"
         >
-          <li>Roadmap</li>
+          <li>Marketplace</li>
         </Link>
         <Link
           onClick={() => {
@@ -31,7 +31,7 @@ export function NavMenu() {
           className={styles.navMenuItem}
           href="/"
         >
-          <li>Roadmap</li>
+          <li>Game play</li>
         </Link>
         <Link
           onClick={() => {
@@ -40,7 +40,7 @@ export function NavMenu() {
           className={styles.navMenuItem}
           href="/"
         >
-          <li>Roadmap</li>
+          <li>Feature & benefits</li>
         </Link>
         <Link
           onClick={() => {

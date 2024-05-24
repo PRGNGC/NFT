@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { query, validationResult } from "express-validator";
+import { Character } from "../mongoose/schemas/characterSchema.mjs";
 
 const router = Router();
 
@@ -1499,7 +1500,10 @@ const characters = [
   },
 ];
 
-router.get("/api/characters", (req, res) => {
+router.get("/api/characters", async (req, res) => {
+  const db = await Character.find({});
+  console.log("DB - ", typeof db);
+
   if (req.query.search) {
     const limit = 5;
 

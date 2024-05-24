@@ -1,9 +1,14 @@
 "use client";
-import { ItemCard } from "@/entities/nft/ui";
+import { ItemCard } from "@/entities/nft/ui/itemCard";
 import styles from "./NftList.module.scss";
-import { useSearchParams, useParams, notFound } from "next/navigation";
-import { loadNfts } from "@/entities/nft/queries";
+import {
+  useSearchParams,
+  useParams,
+  notFound,
+  usePathname,
+} from "next/navigation";
 import { InfiniteData, UseInfiniteQueryResult } from "@tanstack/react-query";
+import { ItemCardSkeleton } from "@/entities/nft/ui/ItemCardSkeleton";
 
 interface INftList {
   fetchFunc(
@@ -16,6 +21,7 @@ export function NftList({ fetchFunc }: INftList) {
   const searchParams = useSearchParams();
   const searchQuery = searchParams?.get("search") as string;
   const category = useParams()?.category as string;
+  const path = usePathname();
 
   const {
     data,
@@ -26,7 +32,6 @@ export function NftList({ fetchFunc }: INftList) {
     hasNextPage,
     status,
   } = fetchFunc(category, searchQuery);
-  // } = loadNfts(category, searchQuery);
 
   if (isLoading) return <p>Loading...</p>;
 
@@ -43,6 +48,7 @@ export function NftList({ fetchFunc }: INftList) {
             return <ItemCard key={nft.id} category={category} item={nft} />;
           });
         })}
+        {path?.includes("profile") && <ItemCardSkeleton />}
       </div>
       <button
         className={

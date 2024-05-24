@@ -5,33 +5,39 @@
   align-items: center;
   column-gap: 20px;
   .menuBurger {
-    width: 26px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-    span {
-      display: block;
-      background-color: #22252d;
-      border-radius: 2px;
-      height: 2px;
-      width: 100%;
-    }
-  }
-  .menuBlock {
-    display: none;
-    position: absolute;
-    top: -4px;
-    left: 30px;
-    .menuList {
+    .burger {
+      height: 30px;
+      width: 26px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      column-gap: 10px;
-      .menuItem {
-        list-style: none;
-        font-size: 14px;
-        font-weight: 500;
-        color: #494e5b;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 6px;
+      span {
+        display: block;
+        background-color: #22252d;
+        border-radius: 2px;
+        height: 2px;
+        width: 100%;
+      }
+    }
+    .menuBlock {
+      display: none;
+      position: absolute;
+      top: -4px;
+      left: 25px;
+      padding: 10px;
+      width: max-content;
+      .menuList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10px;
+        .menuItem {
+          list-style: none;
+          font-size: 14px;
+          font-weight: 500;
+          color: #494e5b;
+        }
       }
     }
   }

@@ -8,7 +8,8 @@ import { loadNftsForSlider } from "@/entities/nft/queries";
 import { useParams } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { ItemCard } from "@/entities/nft/ui";
+import "./slider.scss";
+import { ItemCard } from "@/entities/nft/ui/itemCard";
 import { useRef } from "react";
 
 interface ISimilarNftsSlider {
@@ -53,7 +54,7 @@ export function SimilarNftsSlider({ nfts }: ISimilarNftsSlider) {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 125,
             },
           }}
           className={styles.sliderBlock}

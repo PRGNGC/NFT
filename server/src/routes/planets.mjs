@@ -14,6 +14,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -55,6 +62,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -96,6 +110,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -137,6 +158,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-4.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -178,6 +206,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-5.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -219,6 +254,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-6.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -260,6 +302,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-7.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -301,6 +350,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-8.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -342,6 +398,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-9.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -383,6 +446,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-1.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -424,6 +494,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-2.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -465,6 +542,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-3.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -506,6 +590,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-4.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -547,6 +638,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-5.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -588,6 +686,13 @@ const planets = [
     nftCoordinates: "-15, +09, +89",
     nftImg: "/images/planet-6.png",
     nftTrait: "new",
+    similarNfts: [
+      "27285132-7508-5495-a672-26b47efd6671",
+      "c803d661-877a-5012-8eed-ac8d815c07ea",
+      "a1776410-b21d-5265-a0eb-2d1b8d064fd1",
+      "5e7a8836-60b9-5ad6-931e-f746545c41cc",
+      "e1517165-ed51-5aa1-ac6e-a5c599ee1f11",
+    ],
     history: [
       {
         user: "@tranmautritam",
@@ -678,6 +783,13 @@ router.get("/api/planets/:id", (req, res) => {
   }
 
   res.status(200).send(filteredPlanets);
+});
+
+router.post("/api/planets/slider", (req, res) => {
+  const { nfts } = req.body;
+  console.log(nfts);
+
+  return res.json(planets.filter((planet) => nfts.includes(planet.id)));
 });
 
 export default router;

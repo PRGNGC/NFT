@@ -14,6 +14,7 @@ export function Logo() {
         dispatch(close());
       }}
       href="/"
+      className={styles.logo}
     >
       <Image src="/icons/logo.svg" alt="logo" width={140} height={50} />
     </Link>
