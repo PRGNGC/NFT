@@ -1,1 +1,1 @@
-export { TelegramSvg } from './TelegramSvg'
+export { TelegramSvg } from "./TelegramSvg";

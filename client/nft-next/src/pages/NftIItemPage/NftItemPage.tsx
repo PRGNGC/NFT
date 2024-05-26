@@ -7,34 +7,34 @@ import { SimilarNftsSlider } from "@/widgets/SimilarNftsSlider";
 import { LinksBanner } from "@/widgets/LinksBanner";
 
 interface NftPageType {
-  nftItem: INft;
+	nftItem: INft;
 }
 
 export function NftItemPage({ nftItem }: NftPageType) {
-  return (
-    <div className={styles.nftItemPage}>
-      <div className={styles.nftItemPageContainer}>
-        <div
-          className={styles.nftItemPageMainContent}
-          style={
-            nftItem.nftType === "planets" || nftItem.nftType === "bundles"
-              ? { flexDirection: "column" }
-              : { flexDirection: "row" }
-          }
-        >
-          <BigNftImage image={nftItem.nftImg} />
+	return (
+		<div className={styles.nftItemPage}>
+			<div className={styles.nftItemPageContainer}>
+				<div
+					className={styles.nftItemPageMainContent}
+					style={
+						nftItem.nftType === "planets" || nftItem.nftType === "bundles"
+							? { flexDirection: "column" }
+							: { flexDirection: "row" }
+					}
+				>
+					<BigNftImage image={nftItem.nftImg} />
 
-          {nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
-            <BigSpec nftItem={nftItem} />
-          ) : (
-            <SmallSpec nftInfo={nftItem} />
-          )}
-        </div>
+					{nftItem.nftType === "planets" || nftItem.nftType === "bundles" ? (
+						<BigSpec nftItem={nftItem} />
+					) : (
+						<SmallSpec nftInfo={nftItem} />
+					)}
+				</div>
 
-        <SimilarNftsSlider nfts={nftItem.similarNfts} />
+				<SimilarNftsSlider nfts={nftItem.similarNfts} />
 
-        <LinksBanner />
-      </div>
-    </div>
-  );
+				<LinksBanner />
+			</div>
+		</div>
+	);
 }

@@ -1,1 +1,1 @@
-export { CopySvgImg } from './CopySvgImg'
+export { CopySvgImg } from "./CopySvgImg";

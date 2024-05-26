@@ -1,1 +1,1 @@
-export {NftList} from './NftList'
+export { NftList } from "./NftList";

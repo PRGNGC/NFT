@@ -4,22 +4,22 @@ import { NftNavigation } from "@/widgets/NftNavigation";
 import { useParams } from "next/navigation";
 
 interface ParamsType {
-  category: string;
-  nft: string;
+	category: string;
+	nft: string;
 }
 
 interface CategoryLayoutTypes {
-  children: React.ReactNode;
-  params: ParamsType;
+	children: React.ReactNode;
+	params: ParamsType;
 }
 
 export default function CategoryLayout({ children }: CategoryLayoutTypes) {
-  const params = useParams();
-  return (
-    <>
-      {params?.nft === undefined && <PreviewBlock />}
-      {params?.nft === undefined && <NftNavigation />}
-      {children}
-    </>
-  );
+	const params = useParams();
+	return (
+		<>
+			{params?.nft === undefined && <PreviewBlock />}
+			{params?.nft === undefined && <NftNavigation />}
+			{children}
+		</>
+	);
 }

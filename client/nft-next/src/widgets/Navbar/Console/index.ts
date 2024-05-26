@@ -1,1 +1,1 @@
-export {Console} from './Console'
+export { Console } from "./Console";

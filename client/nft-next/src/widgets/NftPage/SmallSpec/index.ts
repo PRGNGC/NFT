@@ -1,1 +1,1 @@
-export {SmallSpec} from './SmallSpec'
+export { SmallSpec } from "./SmallSpec";

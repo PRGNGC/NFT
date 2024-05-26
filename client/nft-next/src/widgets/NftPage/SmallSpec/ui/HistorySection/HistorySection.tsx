@@ -5,48 +5,48 @@ import Link from "next/link";
 import { CopySvgImg } from "@/shared/ui/icons/CopySvgImg";
 
 interface IHistorySection {
-  nft: INft;
+	nft: INft;
 }
 
 export function HistorySection({ nft }: IHistorySection) {
-  return (
-    <div className={styles.historySection}>
-      {nft.history.map((historyItem) => {
-        return (
-          <>
-            <div className={styles.historyItem}>
-              <div className={styles.historyUser}>
-                <Image
-                  src={historyItem.userAvatar}
-                  width={48}
-                  height={48}
-                  alt="img"
-                />
-                <div className={styles.userCredentials}>
-                  <p className={styles.transactionType}>
-                    {historyItem.actionType} by
-                    <span
-                      className={styles.userTag}
-                    >{` ${historyItem.user}`}</span>
-                  </p>
-                  <p className={styles.transactionTime}>
-                    {`${historyItem.date} at `}
-                    {`${historyItem.time}`}
-                  </p>
-                </div>
-              </div>
-              <div className={styles.transactionPrice}>
-                {`${historyItem.priceETH} ETH `}
+	return (
+		<div className={styles.historySection}>
+			{nft.history.map((historyItem) => {
+				return (
+					<>
+						<div className={styles.historyItem}>
+							<div className={styles.historyUser}>
+								<Image
+									src={historyItem.userAvatar}
+									width={48}
+									height={48}
+									alt="img"
+								/>
+								<div className={styles.userCredentials}>
+									<p className={styles.transactionType}>
+										{historyItem.actionType} by
+										<span
+											className={styles.userTag}
+										>{` ${historyItem.user}`}</span>
+									</p>
+									<p className={styles.transactionTime}>
+										{`${historyItem.date} at `}
+										{`${historyItem.time}`}
+									</p>
+								</div>
+							</div>
+							<div className={styles.transactionPrice}>
+								{`${historyItem.priceETH} ETH `}
 
-                <Link href="/">
-                  <CopySvgImg />
-                </Link>
-              </div>
-            </div>
-            <hr />
-          </>
-        );
-      })}
-    </div>
-  );
+								<Link href="/">
+									<CopySvgImg />
+								</Link>
+							</div>
+						</div>
+						<hr />
+					</>
+				);
+			})}
+		</div>
+	);
 }

@@ -1,1 +1,1 @@
-export { RightArrowSvgImg } from './RightArrowSvgImg'
+export { RightArrowSvgImg } from "./RightArrowSvgImg";

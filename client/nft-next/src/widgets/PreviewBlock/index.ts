@@ -1,1 +1,1 @@
-export {PreviewBlock} from './PreviewBlock'
+export { PreviewBlock } from "./PreviewBlock";

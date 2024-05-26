@@ -15,11 +15,11 @@ $custom-neutral-10: #7f8596;
 $custom-neutral-11: #f3f3f0;
 
 @mixin orange-button {
-  background-color: $custom-red;
-  padding: 16px 32px;
-  color: white;
-  border-radius: 12px;
-  width: fit-content;
-  font-size: 16px;
-  font-weight: bold;
+	background-color: $custom-red;
+	padding: 16px 32px;
+	color: white;
+	border-radius: 12px;
+	width: fit-content;
+	font-size: 16px;
+	font-weight: bold;
 }

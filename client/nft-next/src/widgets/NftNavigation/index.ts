@@ -1,1 +1,1 @@
-export {NftNavigation} from './NftNavigation'
+export { NftNavigation } from "./NftNavigation";

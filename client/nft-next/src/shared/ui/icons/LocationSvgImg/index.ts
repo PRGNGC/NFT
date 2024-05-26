@@ -1,1 +1,1 @@
-export { LocationSvgImg } from './LocationSvgImg'
+export { LocationSvgImg } from "./LocationSvgImg";

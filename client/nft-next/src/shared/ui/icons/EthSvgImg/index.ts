@@ -1,1 +1,1 @@
-export { EthSvgImg } from './EthSvgImg'
+export { EthSvgImg } from "./EthSvgImg";

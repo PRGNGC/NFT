@@ -1,1 +1,1 @@
-export { UserInfoBlock } from './UserInfoBlock'
+export { UserInfoBlock } from "./UserInfoBlock";

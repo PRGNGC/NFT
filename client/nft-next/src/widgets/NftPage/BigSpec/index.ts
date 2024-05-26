@@ -1,1 +1,1 @@
-export {BigSpec} from './BigSpec'
+export { BigSpec } from "./BigSpec";

@@ -1,1 +1,1 @@
-export { TwitterSvg } from './TwitterSvg'
+export { TwitterSvg } from "./TwitterSvg";

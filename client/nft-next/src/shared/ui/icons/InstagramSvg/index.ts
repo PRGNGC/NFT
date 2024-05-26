@@ -1,1 +1,1 @@
-export { InstagramSvg } from './InstagramSvg'
+export { InstagramSvg } from "./InstagramSvg";

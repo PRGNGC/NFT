@@ -1,1 +1,1 @@
-export {SectionsBlock} from './SectionsBlock'
+export { SectionsBlock } from "./SectionsBlock";

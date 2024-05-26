@@ -1,3 +1,3 @@
 export default function EditProfilePage() {
-  return <p>Edit profile page</p>;
+	return <p>Edit profile page</p>;
 }

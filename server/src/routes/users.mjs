@@ -39,16 +39,16 @@ router.get("/api/user", async (req, res) => {
     ) {
       const { accessToken, refreshToken } = getTokens(verifyRefreshToken.login);
 
-      console.log("New access token - " + accessToken);
-      console.log("New refresh token - " + refreshToken);
+      // console.log("New access token - " + accessToken);
+      // console.log("New refresh token - " + refreshToken);
 
       const user = await User.findOne({ login: verifyRefreshToken.login });
-      console.log("user - ", user);
-      console.log("name2 - ", user.name);
-      console.log("userImg2 - ", user.userImg);
-      console.log("userId2 - ", user.userId);
-      console.log("cover2 - ", user.cover);
-      console.log("c2 - ", user.c);
+      // console.log("user - ", user);
+      // console.log("name2 - ", user.name);
+      // console.log("userImg2 - ", user.userImg);
+      // console.log("userId2 - ", user.userId);
+      // console.log("cover2 - ", user.cover);
+      // console.log("c2 - ", user.c);
       res.cookie("refreshToken", refreshToken, {
         maxAge: refreshTokenAge,
         httpOnly: true,
@@ -67,12 +67,12 @@ router.get("/api/user", async (req, res) => {
 
     const verifyAccessToken = jwt.verify(accessToken, "token_access");
     const user = await User.findOne({ login: verifyAccessToken.login });
-    console.log("user - ", user);
-    console.log("name1 - ", user.name);
-    console.log("userImg1 - ", user.userImg);
-    console.log("userId1 - ", user.userId);
-    console.log("cover1 - ", user.cover);
-    console.log("c1 - ", user.c);
+    // console.log("user - ", user);
+    // console.log("name1 - ", user.name);
+    // console.log("userImg1 - ", user.userImg);
+    // console.log("userId1 - ", user.userId);
+    // console.log("cover1 - ", user.cover);
+    // console.log("c1 - ", user.c);
     return res.status(200).send({
       user,
       // user: {

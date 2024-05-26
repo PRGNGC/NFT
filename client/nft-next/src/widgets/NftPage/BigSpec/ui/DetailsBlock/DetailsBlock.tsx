@@ -6,20 +6,20 @@ import { LinksSection } from "./LinksSection";
 import { HistorySection } from "./HistorySection";
 
 interface IDetailsBlock {
-  nftItem: INft;
+	nftItem: INft;
 }
 
 export function DetailsBlock({ nftItem }: IDetailsBlock) {
-  return (
-    <div className={styles.detailsBlock}>
-      <h2 className={styles.detailsTitle}>Details</h2>
-      <BySection nftItem={nftItem} />
-      <hr />
-      <StatSection nftItem={nftItem} />
-      <hr />
-      <LinksSection />
-      <hr />
-      <HistorySection nftItem={nftItem} />
-    </div>
-  );
+	return (
+		<div className={styles.detailsBlock}>
+			<h2 className={styles.detailsTitle}>Details</h2>
+			<BySection nftItem={nftItem} />
+			<hr />
+			<StatSection nftItem={nftItem} />
+			<hr />
+			<LinksSection />
+			<hr />
+			<HistorySection nftItem={nftItem} />
+		</div>
+	);
 }

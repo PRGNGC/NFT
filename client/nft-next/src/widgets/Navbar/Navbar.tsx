@@ -7,15 +7,15 @@ import { Console } from "./Console";
 import { NavMenu } from "./NavMenu";
 
 export function Navbar() {
-  return (
-    <div className={styles.navbarBlock}>
-      <NavMenu />
-      <div className={styles.navbarContainer}>
-        <MenuBurger />
-        <Logo />
-        <PlayButton />
-        <Console />
-      </div>
-    </div>
-  );
+	return (
+		<div className={styles.navbarBlock}>
+			<NavMenu />
+			<div className={styles.navbarContainer}>
+				<MenuBurger />
+				<Logo />
+				<PlayButton />
+				<Console />
+			</div>
+		</div>
+	);
 }

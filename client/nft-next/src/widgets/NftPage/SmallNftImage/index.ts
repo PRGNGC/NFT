@@ -1,1 +1,1 @@
-export {SmallNftImage} from './SmallNftImage'
+export { SmallNftImage } from "./SmallNftImage";

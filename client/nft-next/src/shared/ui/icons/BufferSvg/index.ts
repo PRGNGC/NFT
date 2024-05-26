@@ -1,1 +1,1 @@
-export { BufferSvg } from './BufferSvg'
+export { BufferSvg } from "./BufferSvg";

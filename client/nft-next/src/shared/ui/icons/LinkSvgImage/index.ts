@@ -1,1 +1,1 @@
-export {LinkSvgImage} from './LinkSvgImage'
+export { LinkSvgImage } from "./LinkSvgImage";
