@@ -11,7 +11,7 @@ import { InfiniteData, UseInfiniteQueryResult } from "@tanstack/react-query";
 import { ItemCardSkeleton } from "@/entities/nft/ui/ItemCardSkeleton";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
-import type { INft } from "@/entities/nft/api/types";
+ import type { INft } from "@/entities/nft/api/types";
 
 interface INftList {
 	fetchFunc(
