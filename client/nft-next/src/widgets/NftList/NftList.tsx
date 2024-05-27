@@ -21,7 +21,7 @@ interface INftList {
 	): UseInfiniteQueryResult<InfiniteData<any, unknown>, Error>;
 }
 
-let a = 1;
+const a = 2;
 
 export function NftList({ fetchFunc }: INftList) {
 	const searchParams = useSearchParams();

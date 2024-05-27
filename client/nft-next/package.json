@@ -13,7 +13,8 @@
 		"lint:fix": "npx eslint 'src/**/*.{ts, tsx}' --fix",
 		"stylelint": "npx stylelint 'src/**/*.{css, scss}'",
 		"stylelint:fix": "npx stylelint 'src/**/*.{scss, css}' --fix",
-		"lint-staged": "npx lint-staged --concurrent false"
+		"lint-staged": "npx lint-staged --concurrent false",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.2.5",

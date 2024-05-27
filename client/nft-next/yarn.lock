@@ -254,7 +254,11 @@
     hoist-non-react-statics "^3.3.0"
     redux "^4.0.0"
 
+<<<<<<< HEAD
 "@types/react@*", "@types/react@^18", "@types/react@^18.2.25":
+=======
+"@types/react@*", "@types/react@^18":
+>>>>>>> 6d37ae2a93f30618875f17c24d764c1511d00b29
   version "18.2.75"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.2.75.tgz"
   integrity sha512-+DNnF7yc5y0bHkBTiLKqXFe+L4B3nvOphiMY3tuA5X10esmjqk7smyBZzbGTy2vsiy/Bnzj8yFIBL8xhRacoOg==
@@ -2617,7 +2621,11 @@ redux@^4.0.0:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
+<<<<<<< HEAD
 redux@^5.0.0, redux@^5.0.1, redux@>4.0.0:
+=======
+redux@^5.0.1:
+>>>>>>> 6d37ae2a93f30618875f17c24d764c1511d00b29
   version "5.0.1"
   resolved "https://registry.npmjs.org/redux/-/redux-5.0.1.tgz"
   integrity sha512-M9/ELqF6fy8FwmkpnF0S3YKOqMyoWJ4+CS5Efg2ct3oY9daQvd/Pc71FpGZsVsbl3Cpb+IIcjBDUnnyBdQbq4w==
