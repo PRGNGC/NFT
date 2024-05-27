@@ -12,7 +12,7 @@ export async function getNfts(
 }
 
 export async function getNftsForSlider(category: string, nfts: string[]) {
-	const url: string = `http://localhost:4000/api/${category}/slider`;
+	const url = `http://localhost:4000/api/${category}/slider`;
 
 	const response = await fetch(url, {
 		method: "POST",

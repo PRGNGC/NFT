@@ -6,14 +6,13 @@ import eslintReactHooks from "eslint-plugin-react-hooks";
 import eslintReactRefresh from "eslint-plugin-react-refresh";
 import prettierPlugin from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
+import eslintAirbnbConfig from "eslint-config-airbnb";
 
 export default tseslint.config(
 	js.configs.recommended,
 	...tseslint.configs.recommended,
 	...tseslint.configs.stylistic,
 	...tseslint.configs.strict,
-	...tseslint.configs.stylisticTypeChecked,
-	...tseslint.configs.strictTypeChecked,
 	{
 		plugins: {
 			"@typescript-eslint": tseslint.plugin,
@@ -30,6 +29,7 @@ export default tseslint.config(
 			"dist",
 			".next",
 			"next.config.mjs",
+			"next-env.d.ts",
 			"eslint.config.js"
 		]
 	},
@@ -40,27 +40,20 @@ export default tseslint.config(
 				...globals.browser,
 				...globals.es2021
 			},
+			parser: tseslint.parser,
 			parserOptions: {
-				project: ["tsconfig.json"]
+				// project: ["tsconfig.json"]
+				project: true
 			}
+		},
+		rules: {
+			"@typescript-eslint/no-unused-vars": "warn",
+			...prettierPlugin.configs.recommended.rules,
+			...eslintConfigPrettier.rules,
+			...eslintAirbnbConfig.rules
 		}
 	},
 	{
-		files: ["src/**/*.{ts, tsx}"],
-		rules: {
-			"prefer-const": "warn",
-			"no-unused-vars": "warn",
-			"no-console": "error",
-
-			"comma-spacing": "off",
-			"@typescript-eslint/comma-spacing": { before: true, after: false },
-
-			"no-unused-vars": "off",
-			"@typescript-eslint/no-unused-vars": "warn",
-
-			// "@typescript-eslint/semi": "warn",
-			...prettierPlugin.configs.recommended.rules,
-			...eslintConfigPrettier.rules
-		}
+		files: ["src/**/*.{ts, tsx}"]
 	}
 );

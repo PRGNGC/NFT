@@ -9,10 +9,6 @@ interface IUserInfoBlock {
 }
 
 export function UserInfoBlock({ userInfo }: IUserInfoBlock) {
-	const f = ["a", "a"];
-	const a = 1;
-	console.log(12);
-
 	return (
 		<div className={styles.userInfoBlock}>
 			<Image
