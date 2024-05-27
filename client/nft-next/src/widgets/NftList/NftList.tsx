@@ -27,7 +27,7 @@ export function NftList({ fetchFunc }: INftList) {
 	const category = useParams()?.category as string;
 	const path = usePathname();
 
-	let a = 5;
+	let a = 9;
 
 	const accessToken = useSelector(
 		(state: RootState) => state.login.accessToken
