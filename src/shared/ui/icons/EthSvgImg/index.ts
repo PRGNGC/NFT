@@ -1,1 +1,0 @@
-export { EthSvgImg } from "./EthSvgImg";

@@ -1,1 +1,0 @@
-export { TwitterSvg } from "./TwitterSvg";

@@ -1,1 +1,0 @@
-export { CalendarSvgImg } from "./CalendarSvgImg";

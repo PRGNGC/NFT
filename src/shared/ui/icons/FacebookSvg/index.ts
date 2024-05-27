@@ -1,1 +1,0 @@
-export { FacebookSvg } from "./FacebookSvg";

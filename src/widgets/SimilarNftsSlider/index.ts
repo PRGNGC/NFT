@@ -1,1 +1,0 @@
-export { SimilarNftsSlider } from "./SimilarNftsSlider";

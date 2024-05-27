@@ -1,1 +1,0 @@
-export { SearchNfts } from "./searchNfts";

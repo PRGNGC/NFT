@@ -1,1 +1,0 @@
-export { SmallSpec } from "./SmallSpec";

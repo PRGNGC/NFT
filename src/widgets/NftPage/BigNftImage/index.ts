@@ -1,1 +1,0 @@
-export { BigNftImage } from "./BigNftImage";
