@@ -11,7 +11,7 @@ import { InfiniteData, UseInfiniteQueryResult } from "@tanstack/react-query";
 import { ItemCardSkeleton } from "@/entities/nft/ui/ItemCardSkeleton";
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
- import type { INft } from "@/entities/nft/api/types";
+import type { INft } from "@/entities/nft/api/types";
 
 interface INftList {
 	fetchFunc(
@@ -28,8 +28,6 @@ export function NftList({ fetchFunc }: INftList) {
 	const searchQuery = searchParams?.get("search") as string;
 	const category = useParams()?.category as string;
 	const path = usePathname();
-
-	let a = 19;
 
 	const accessToken = useSelector(
 		(state: RootState) => state.login.accessToken
